@@ -48,5 +48,155 @@
 
 </section>
 
+
+<!-- Gallery -->
+<section class="gallery">
+      
+  <div class="img-slider">
+    <div class="slide active">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 01</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 03</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 04</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 05</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Slide 06</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>  
+</section>
+
+<!--achievement table-->
+
+
+<!-- menu khane ka -->
+
+
+
+
+
+<!-- Js for gallery -->
+<script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+  let currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i){
+        i = 0;
+      }
+      if(i >= slides.length){
+        return;
+      }
+      repeater();
+    }, 10000);
+    }
+    repeater();
+  }
+  repeat();
+  </script> 
+
+  <!-- Js for navbar -->
+  <script>
+    //Javacript for the scroll indicator bar
+    window.addEventListener("scroll", () => {
+      const indicatorBar = document.querySelector(".scroll-indicator-bar");
+
+      const pageScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrollValue = (pageScroll / height) * 100;
+
+      indicatorBar.style.width = scrollValue + "%";
+    });
+
+    //Responsive navigation menu toggle
+    const menuBtn = document.querySelector(".nav-menu-btn");
+      const closeBtn = document.querySelector(".nav-close-btn");
+      const navigation = document.querySelector(".navigation");
+
+      menuBtn.addEventListener("click", () => {
+        navigation.classList.add("active");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        navigation.classList.remove("active");
+      });
+  </script> 
+
 </body>
 </html>
