@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
@@ -19,7 +22,7 @@
 <body>
          <!--Navbar  -->
   <header>
-    <div class="nav-bar">
+    <!-- <div class="nav-bar">
       <a href="" class="logo"> <img src="img/edited.jpg" alt="Logo"></a>
       <div class="navigation">
         <div class="nav-items">
@@ -35,6 +38,21 @@
     </div>
     <div class="scroll-indicator-container">
       <div class="scroll-indicator-bar"></div>
+    </div> -->
+
+    <a href="#" class="brand">Brand</a>
+    <div class="menu">
+      <div class="btn">
+        <i class="fas fa-times close-btn"></i>
+      </div>
+      <a href="#">Home</a>
+      <a href="#">Services</a>
+      <a href="#">About</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="btn">
+      <i class="fas fa-bars menu-btn"></i>
     </div>
   </header>
 
@@ -51,8 +69,55 @@
 
 <!-- Gallery -->
 <section class="gallery">
-      
-  <div class="img-slider">
+  <div class="slider">
+    <div class="slide active">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Winter Mountains</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Tropical Desert</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Steaming Volcanoes</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Mountain River</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img/edited.jpg" alt="">
+      <div class="info">
+        <h2>Egypt Pyramids</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+    </div>
+    <div class="navigation">
+      <i class="fas fa-chevron-left prev-btn"></i>
+      <i class="fas fa-chevron-right next-btn"></i>
+    </div>
+    <div class="navigation-visibility">
+      <div class="slide-icon active"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+      <div class="slide-icon"></div>
+    </div>
+  </div>      
+  <!-- <div class="img-slider">
     <div class="slide active">
       <img src="img/edited.jpg" alt="">
       <div class="info">
@@ -103,7 +168,7 @@
       <div class="btn"></div>
       <div class="btn"></div>
     </div>
-  </div>  
+  </div>   -->
 </section>
 
 <!--achievement table-->
@@ -112,10 +177,65 @@
 <!-- menu khane ka -->
 
 
+<!-- contact us -->
+<footer>  
+  <div class="footer0">  
+    <h1>ShoPperZ</h1>  
+  </div>  
+  <div class="footer1 ">  
+    Connect with us at<div class="social-media">  
+      <a href="#">  
+        <ion-icon name="logo-facebook"></ion-icon>  
+      </a>  
+      <a href="#">  
+        <ion-icon name="logo-linkedin"></ion-icon>  
+      </a>  
+      <a href="#">  
+        <ion-icon name="logo-youtube"></ion-icon>  
+      </a>  
+      <a href="#">  
+        <ion-icon name="logo-instagram"></ion-icon>  
+      </a>  
+      <a href="#">  
+        <ion-icon name="logo-twitter"></ion-icon>  
+      </a>  
+    </div>  
+  </div>  
+  <div class="footer2">  
+    <div class="product">  
+      <div class="heading">Products</div>  
+      <div class="div">Sell your Products</div>  
+      <div class="div">Advertise</div>  
+      <div class="div">Pricing</div>  
+      <div class="div">Product Buisness</div>  
+    </div>  
+    <div class="services">  
+      <div class="heading">Services</div>  
+      <div class="div">Return</div>  
+      <div class="div">Cash Back</div>  
+      <div class="div">Affiliate Marketing</div>  
+      <div class="div">Others</div>  
+    </div>  
+    <div class="Company">  
+      <div class="heading">Company</div>  
+      <div class="div">Complaint</div>  
+      <div class="div">Careers</div>  
+      <div class="div">Affiliate Marketing</div>  
+      <div class="div">Support</div>  
+    </div>  
+    <div class="Get Help">  
+      <div class="heading">Get Help</div>  
+      <div class="div">Help Center</div>  
+      <div class="div">Privacy Policy</div>  
+      <div class="div">Terms</div>  
+      <div class="div">Login</div>  
+    </div>  
+  </div>  
+  <div class="footer3">Copyright © <h4>ShoPperZ</h4> 2021-2028</div>  
+</footer>
 
 
-
-<!-- Js for gallery -->
+<!-- Js for gallery
 <script type="text/javascript">
   var slides = document.querySelectorAll('.slide');
   var btns = document.querySelectorAll('.btn');
@@ -169,9 +289,9 @@
     repeater();
   }
   repeat();
-  </script> 
+  </script>  -->
 
-  <!-- Js for navbar -->
+  <!-- Js for navbar
   <script>
     //Javacript for the scroll indicator bar
     window.addEventListener("scroll", () => {
@@ -196,7 +316,113 @@
       closeBtn.addEventListener("click", () => {
         navigation.classList.remove("active");
       });
-  </script> 
+  </script>  -->
+
+  <!-- Js for navbar final --> 
+<script type="text/javascript">
+  //javascript for navigation bar effect on scroll
+  window.addEventListener("scroll", function(){
+    var header = document.querySelector("header");
+    header.classList.toggle('sticky', window.scrollY > 0);
+  });
+
+  //javascript for responsive navigation sidebar menu
+  var menu = document.querySelector('.menu');
+  var menutn = document.querySelector('.menu-btn');
+  var closetn = document.querySelector('.close-btn');
+
+  menutn.addEventListener("click", () => {
+    menu.classList.add('active');
+  });
+
+  closetn.addEventListener("click", () => {
+    menu.classList.remove('active');
+  });
+  </script>
+
+<!-- js for img slider -->
+<script type="text/javascript">
+  const slider = document.querySelector(".slider");
+  const nextBtn = document.querySelector(".next-btn");
+  const prevBtn = document.querySelector(".prev-btn");
+  const slides = document.querySelectorAll(".slide");
+  const slideIcons = document.querySelectorAll(".slide-icon");
+  const numberOfSlides = slides.length;
+  var slideNumber = 0;
+
+  //image slider next button
+  nextBtn.addEventListener("click", () => {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active");
+    });
+
+    slideNumber++;
+
+    if(slideNumber > (numberOfSlides - 1)){
+      slideNumber = 0;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  });
+
+  //image slider previous button
+  prevBtn.addEventListener("click", () => {
+    slides.forEach((slide) => {
+      slide.classList.remove("active");
+    });
+    slideIcons.forEach((slideIcon) => {
+      slideIcon.classList.remove("active");
+    });
+
+    slideNumber--;
+
+    if(slideNumber < 0){
+      slideNumber = numberOfSlides - 1;
+    }
+
+    slides[slideNumber].classList.add("active");
+    slideIcons[slideNumber].classList.add("active");
+  });
+
+  //image slider autoplay
+  var playSlider;
+
+  var repeater = () => {
+    playSlider = setInterval(function(){
+      slides.forEach((slide) => {
+        slide.classList.remove("active");
+      });
+      slideIcons.forEach((slideIcon) => {
+        slideIcon.classList.remove("active");
+      });
+
+      slideNumber++;
+
+      if(slideNumber > (numberOfSlides - 1)){
+        slideNumber = 0;
+      }
+
+      slides[slideNumber].classList.add("active");
+      slideIcons[slideNumber].classList.add("active");
+    }, 4000);
+  }
+  repeater();
+
+  //stop the image slider autoplay on mouseover
+  slider.addEventListener("mouseover", () => {
+    clearInterval(playSlider);
+  });
+
+  //start the image slider autoplay again on mouseout
+  slider.addEventListener("mouseout", () => {
+    repeater();
+  });
+</script>
+
 
 </body>
 </html>
